@@ -1,13 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './NavBar'
+import NavBar from './componentes/NavBar/NavBar'
 
 function App() {
   return (
-    <div className="App">
-      <h1> Coderhouse </h1>
-      <NavBar />
-    </div>
+    <div classNam = "App">
+      <header className = "App-header">
+        <NavBar className="NavBar"/>
+      </header>
+    </div> 
   );
 }
 
