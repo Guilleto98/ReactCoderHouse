@@ -2,6 +2,7 @@ import './App.css';
 import NavBar from './componentes/NavBar/NavBar'
 import CountClass from './componentes/CountClass/CountClass'
 import CountFunction from './componentes/CountFunction/CountFunction'
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <NavBar className="NavBar"/>
         <CountClass />
         <CountFunction />
+        <ItemListContainer greeting="Preservando nuestra cultura"/>
         
     </div> 
   );

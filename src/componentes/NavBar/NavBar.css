@@ -9,6 +9,10 @@ nav{
   position: relative;
 }
 
+nav button{
+  background-color: #c2a97a;
+}
+
 .name{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -26,6 +30,6 @@ nav{
   }
   
   .buttons-nav:hover {
-    background-color: rgb(64, 128, 75);
+    background-color: rgb(109, 103, 67);
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 10px 10px 0 rgba(248, 245, 245, 0.19);
   }

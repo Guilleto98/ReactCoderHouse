@@ -1,19 +1,30 @@
+import { useState } from 'react'
+import Button from '../Button/Button'
+
 const CountFunction = (props) => {
-    let count = 0
+
+//***FORMA DE UTILIZAR ESTA HERRAMIENTA A LO CANARIO */
+    /*const state = useState(0)
+
+    const count = state[0]
+    const setCount = state[1]*/
+
+//***FORMA CORRECTA: DESTRUCTURAR EL ARRIVE ***/
+    const [ count, setCount ] = useState(0)
 
     const decrement = () =>{
-        count = count--
+        setCount(count - 1)
     }
 
     const increment = () =>{
-        count = count++
+        setCount(count + 1)
     }
 
 
     return ( <div style={{display:"flex"}}>
-                <button onClick={decrement}>-</button>
+                <Button handleClick={decrement} label='-' color='red' />
                 <h1>{count}</h1>
-                <button onClick={increment}>+</button>
+                <Button handleClick={increment} label='+' color='green' />
             </div>)
 }
 
