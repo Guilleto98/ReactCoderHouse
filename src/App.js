@@ -1,18 +1,22 @@
+import React from 'react'
 import './App.css';
 import NavBar from './componentes/NavBar/NavBar'
-import CountClass from './componentes/CountClass/CountClass'
-import CountFunction from './componentes/CountFunction/CountFunction'
+/*import CountClass from './componentes/CountClass/CountClass'
+import CountFunction from './componentes/CountFunction/CountFunction'*/
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
+import ItemCount from './componentes/ItemCount/ItemCount'
 
 function App() {
-  return (
+
+    return (
     <div classNam = "App">
 
         <NavBar className="NavBar"/>
-        <CountClass />
-        <CountFunction />
         <ItemListContainer greeting="Preservando nuestra cultura"/>
-        
+        <ItemCount />
+        {/* show ? <CountFunction /> : null */}
+        {/*<CountClass />*/}
+        {/*<CountFunction />*/}
     </div> 
   );
 }

@@ -1,0 +1,23 @@
+.divCount{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.btnCount{
+        background-color: #c2a97a;
+        height: 75px;
+        width: 35px;
+        border-radius: 10px;
+}
+
+.btnCount:hover{
+    background-color: #e4cc9f;
+    transition: 1s;
+}
+
+h1{
+    padding: 10px;
+    font-family: Roboto;
+    font-size:  50px ;
+}
