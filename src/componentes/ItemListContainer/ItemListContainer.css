@@ -1,3 +1,9 @@
+.divPadre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .cartItem {
     display: flex;
     flex-direction: row;
@@ -5,4 +11,21 @@
     justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid #ccc;
+}
+
+.h1{
+    font-family: Roboto;
+    width: 100%;
+}
+
+h2{
+    font-family: Roboto;
+}
+
+h3{
+    font-family: Roboto;
+}
+
+p{
+    font-family: Roboto;
 }

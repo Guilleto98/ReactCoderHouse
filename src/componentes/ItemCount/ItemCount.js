@@ -12,11 +12,11 @@ const ItemCount = (props) => {
 // inicializo count en 1 porque quiero que el cliente agregue la cantidad 1 o mayor en el carriito
 
 //***FORMA CORRECTA: DESTRUCTURAR EL ARRIVE ***/
-    const [ count, setCount ] = useState(0)
+    const [ count, setCount ] = useState(1)
 
  // en decrement agrego un fi para que count nunca sea negativo    
     const decrement = () =>{
-        if( count > 0){
+        if( count > 1){
             setCount(count - 1)
         }
     }
