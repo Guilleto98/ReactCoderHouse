@@ -13,7 +13,7 @@ function App() {
 
         <NavBar className="NavBar"/>
         <ItemListContainer greeting="Preservando nuestra cultura"/>
-        <ItemCount stock={10}/>
+        <ItemCount stock={5}/>
         {/* show ? <CountFunction /> : null */}
         {/*<CountClass />*/}
         {/*<CountFunction />*/}

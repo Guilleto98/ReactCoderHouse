@@ -1,5 +1,6 @@
 import './ItemCount.css'
 import { useState } from 'react'
+import {products}   from '../../asyncmock'
 
 // CORRECCIÓNES******
 // ItemCount debería recibir stock por props.
@@ -12,11 +13,11 @@ const ItemCount = (props) => {
 // inicializo count en 1 porque quiero que el cliente agregue la cantidad 1 o mayor en el carriito
 
 //***FORMA CORRECTA: DESTRUCTURAR EL ARRIVE ***/
-    const [ count, setCount ] = useState(1)
+    const [ count, setCount ] = useState(0)
 
  // en decrement agrego un fi para que count nunca sea negativo    
     const decrement = () =>{
-        if( count > 1){
+        if( count > 0){
             setCount(count - 1)
         }
     }
