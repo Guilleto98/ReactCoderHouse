@@ -1,13 +1,18 @@
+.divCountPadre{
+ display: flex;
+ flex-direction: column;
+}
+
 .divCount{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnCount{
         background-color: #c2a97a;
-        height: 75px;
-        width: 35px;
+        height: 55px;
+        width: 19px;
         border-radius: 10px;
 }
 
@@ -20,4 +25,20 @@ h1{
     padding: 10px;
     font-family: Roboto;
     font-size:  50px ;
+}
+
+.btnCart{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #383d47;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.btnCart:hover{
+    cursor: pointer;
+    background-color: #71e262;
+    color: black;
 }

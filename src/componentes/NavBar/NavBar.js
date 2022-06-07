@@ -11,7 +11,6 @@ const NavBar = ()=> {
                 <button className="buttons-nav">Catalogo</button>
                 <button className="buttons-nav">Personalizados</button>
                 <button className="buttons-nav">Testimonios</button>
-                <button className="buttons-nav">Testimonios</button>
             </div>
             <CartWidget />
         </nav>

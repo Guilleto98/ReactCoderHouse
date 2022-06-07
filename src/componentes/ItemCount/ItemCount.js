@@ -1,6 +1,7 @@
 import './ItemCount.css'
 import { useState } from 'react'
-import {products}   from '../../asyncmock'
+import swal from 'sweetalert';
+
 
 // CORRECCIÓNES******
 // ItemCount debería recibir stock por props.
@@ -12,7 +13,7 @@ const ItemCount = (props) => {
 // otra forma es hacer const { stock } = props y uso directamente stock.
 // inicializo count en 1 porque quiero que el cliente agregue la cantidad 1 o mayor en el carriito
 
-//***FORMA CORRECTA: DESTRUCTURAR EL ARRIVE ***/
+//***FORMA CORRECTA: DESTRUCTURAR EL ARRAY ***/
     const [ count, setCount ] = useState(0)
 
  // en decrement agrego un fi para que count nunca sea negativo    
@@ -28,12 +29,17 @@ const ItemCount = (props) => {
             setCount(count + 1)
         }
     }
+
+    const notificacion = () => swal("Bien hecho!", "Agregaste " + count + " productos al carrtito!", "success")
       
 
-    return ( <div className="divCount" style={{display:"flex"}}>
-                <button className="btnCount" onClick={decrement} color='red' >-</button>
-                <h1>{count}</h1>
-                <button className="btnCount" onClick={increment} color='red' >+</button>
+    return ( <div className="divCountPadre" style={{display:"flex"}}>
+                <div className="divCount">
+                    <button className="btnCount" onClick={decrement} color='red' >-</button>
+                    <h1>{count}</h1>
+                    <button className="btnCount" onClick={increment} color='red' >+</button>
+                </div>
+                <button className="btnCart" onClick={notificacion}>Agregar al carrito</button>
             </div>)
 
 

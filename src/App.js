@@ -4,7 +4,6 @@ import NavBar from './componentes/NavBar/NavBar'
 /*import CountClass from './componentes/CountClass/CountClass'
 import CountFunction from './componentes/CountFunction/CountFunction'*/
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
-import ItemCount from './componentes/ItemCount/ItemCount'
 
 function App() {
 
@@ -13,7 +12,6 @@ function App() {
 
         <NavBar className="NavBar"/>
         <ItemListContainer greeting="Preservando nuestra cultura"/>
-        <ItemCount stock={5}/>
         {/* show ? <CountFunction /> : null */}
         {/*<CountClass />*/}
         {/*<CountFunction />*/}

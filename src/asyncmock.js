@@ -4,7 +4,7 @@ export const products = [
     img: "https://www.mundomate.cl/wp-content/uploads/2020/11/mate-imperial-2133-scaled.jpg",
     price: 2200,
     category: 'Imperial',
-    stock: 5,
+    stock: 10,
     description: 'Imperial cuero natura, color negro, virola de alpaca guarda pampa'
   },
 

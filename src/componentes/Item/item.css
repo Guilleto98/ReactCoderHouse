@@ -4,28 +4,12 @@
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    height: 650px;
+    height: 800px;
     justify-content: center;
     align-items: center;
 }
 
 img{
     display: flex;
-    height: 50%;
-}
-
-.btnCart{
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: #383d47;
-    color: rgb(255, 255, 255);
-    font-family: Roboto;
-    font-size: 20px;
-}
-
-.btnCart:hover{
-    cursor: pointer;
-    background-color: #71e262;
-    color: black;
+    height: 30%;
 }
