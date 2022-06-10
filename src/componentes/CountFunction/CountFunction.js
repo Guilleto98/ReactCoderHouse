@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Button from '../Button/Button'
 
-const CountFunction = (props) => {
+const CountFunction = (stock) => {
 
 //***FORMA DE UTILIZAR ESTA HERRAMIENTA A LO CANARIO */
     /*const state = useState(0)
@@ -13,10 +13,12 @@ const CountFunction = (props) => {
     const [ count, setCount ] = useState(0)
 
     const decrement = () =>{
+        if(count > 0)
         setCount(count - 1)
     }
 
     const increment = () =>{
+        if(count < stock)
         setCount(count + 1)
     }
 

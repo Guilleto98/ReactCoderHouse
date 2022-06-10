@@ -1,6 +1,7 @@
 .divCart{
     display: flex;
-    margin: 20px;
+    width: 35%;
+    margin: 10px;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -11,5 +12,5 @@
 
 img{
     display: flex;
-    height: 30%;
+    height: 55%;
 }

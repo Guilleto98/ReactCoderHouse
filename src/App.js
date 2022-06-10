@@ -4,6 +4,7 @@ import NavBar from './componentes/NavBar/NavBar'
 /*import CountClass from './componentes/CountClass/CountClass'
 import CountFunction from './componentes/CountFunction/CountFunction'*/
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
+import ItemDetail from '../src/componentes/ItemDetailContainer/ItemDetail'
 
 function App() {
 
@@ -15,6 +16,9 @@ function App() {
         {/* show ? <CountFunction /> : null */}
         {/*<CountClass />*/}
         {/*<CountFunction />*/}
+        <ItemDetail />
+        
+
     </div> 
   );
 }

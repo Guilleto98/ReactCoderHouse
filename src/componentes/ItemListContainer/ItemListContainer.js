@@ -11,12 +11,13 @@ const ItemListContainer = ({ greeting }) => {
         getProducts().then (response => {setProducts(response)}) }, [])
     
     return (
-        <div className="divPadre">
-            <h1 className="h1">{greeting}</h1>
-            <div className="cartItem">
-                <ItemList products={products}/>
-            </div>
-        </div>
+          <>
+          
+          <h1 className="h1">{greeting}</h1>
+          <ItemList products={products}/>
+          
+          </>
+        
     )
         
 }
