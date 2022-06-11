@@ -26,10 +26,3 @@ export const getProducts = () =>{
     })
 }
 
-export const getItem = () =>{
-  return new Promise ((resolve) =>{
-      setTimeout(()=>{
-          resolve(products)
-      }, 2000)
-  })
-}

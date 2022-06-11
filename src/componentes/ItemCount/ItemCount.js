@@ -1,6 +1,7 @@
 import './ItemCount.css'
 import { useState } from 'react'
 import swal from 'sweetalert';
+import { Link } from 'react-router-dom';
 
 
 // CORRECCIÓNES******
@@ -39,7 +40,7 @@ const ItemCount = (props) => {
                     <h1>{count}</h1>
                     <button className="btnCount" onClick={increment} color='red' >+</button>
                 </div>
-                <button className="btnCart" onClick={notificacion}>Agregar al carrito</button>
+                <button className="btnCart" onClick={notificacion} ><Link to={'/cart'}>Agregar al carrito</Link></button>
             </div>)
 
 

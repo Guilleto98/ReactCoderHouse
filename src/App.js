@@ -4,22 +4,32 @@ import NavBar from './componentes/NavBar/NavBar'
 /*import CountClass from './componentes/CountClass/CountClass'
 import CountFunction from './componentes/CountFunction/CountFunction'*/
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
-import ItemDetail from '../src/componentes/ItemDetailContainer/ItemDetail'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
+
 
 function App() {
 
     return (
-    <div classNam = "App">
+      <BrowserRouter>
+        <div classNam = "App">
 
-        <NavBar className="NavBar"/>
-        <ItemListContainer greeting="Preservando nuestra cultura"/>
-        {/* show ? <CountFunction /> : null */}
-        {/*<CountClass />*/}
-        {/*<CountFunction />*/}
-        <ItemDetail />
+          <NavBar className="NavBar"/>
+
+          <Routes>
+            <Route path="/" element={ <ItemListContainer greeting="Preservando nuestra cultura"/>} />
+            <Route path="/*" element={ <ItemListContainer greeting="Preservando nuestra cultura"/>} />
+            <Route path="/description/:id" element={<ItemDetailContainer/>} />
+           {/*  <ItemListContainer greeting="Preservando nuestra cultura"/> */}
+            {/* show ? <CountFunction /> : null */}
+            {/*<CountClass />*/}
+            {/*<CountFunction />*/}
+            {/* <ItemDetail /> */}
+          </Routes>
+        </div> 
+      </BrowserRouter>
         
 
-    </div> 
   );
 }
 

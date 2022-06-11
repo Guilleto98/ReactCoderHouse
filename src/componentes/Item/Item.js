@@ -1,14 +1,14 @@
 import './item.css'
 import '../ItemCount/ItemCount'
-import ItemCount from '../ItemCount/ItemCount'
+import { Link } from 'react-router-dom'
 
-const Item = ({ name,img, stock}) => {
+const Item = ({ name,img, id}) => {
 
     return(
         <div className="divCart" >
             <h1>{name}</h1>
             <img src={img} alt=""/>
-            <ItemCount stock={stock}/>
+            <button className="btnCart"><Link to={`/description/${id}`} > DESCRIPTION </Link></button>
         </div>
 
     )
