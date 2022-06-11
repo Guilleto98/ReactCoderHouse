@@ -5,7 +5,8 @@ export const products = [
     price: 2200,
     category: 'Imperial',
     stock: 10,
-    description: 'Imperial cuero natura, color negro, virola de alpaca guarda pampa'
+
+    descriptionLarga: 'Imperial cuero natura, color negro, virola de alpaca guarda pampa aca agregale mas informacion ya que es el detalle del producto y la idea de aca es que puedas hablar mas sobre ese producto en particular, la otra descripcion es solo una idea y esta descripcion es mas detallada jajajaja y estoy escribiendo mucho texto para que quede bien pero despues ponele lo que vos quieras'
   },
 
   { id: '2',
@@ -14,7 +15,7 @@ export const products = [
     price: 2200,
     category: 'Imperial',
     stock: 5,
-    description: 'Imperial cuero natural, color marrón clarito, virola de alpaca guarda pampa'
+    descriptionLarga: 'Imperial cuero natural, color marrón clarito, virola de alpaca guarda pampa aca agregale mas informacion ya que es el detalle del producto y la idea de aca es que puedas hablar mas sobre ese producto en particular, la otra descripcion es solo una idea y esta descripcion es mas detallada jajajaja y estoy escribiendo mucho texto para que quede bien pero despues ponele lo que vos quieras'
   }
 ]
 
@@ -22,7 +23,16 @@ export const getProducts = () =>{
     return new Promise ((resolve) =>{
         setTimeout(()=>{
             resolve(products)
-        }, 2000)
+        })
+    })
+}
+
+//get que le paso id por parametro
+export const getProduct = (id) =>{
+    return new Promise ((resolve) =>{
+        setTimeout(()=>{
+            resolve(products.find(product => product.id === id))
+        })
     })
 }
 

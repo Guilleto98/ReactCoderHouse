@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import getItem, { products } from '../../asyncmock' 
+import {getProduct } from '../../asyncmock' 
+import ItemDetail from '../ItemDetail/ItemDetail'
 
 
 const ItemDetailContainer = () => {
-    const {id} = useParams
-    getItem.then(item => {
-        products.map(product => {
-            if(product.id === id){
-                return product
-            }
-        }
-        )}
-)}
+    //estado para guardarme el producto
+    const [producto, setProducto] = useState({})
+    const { id } = useParams()
+    getProduct(id)
+    .then(product => {
+        setProducto(product)
+    })
 
-export default ItemDetailContainer 
+    return(
+        <ItemDetail product={producto} />
+    )
+
+}
+export default ItemDetailContainer

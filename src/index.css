@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.imagen-detalle{
+  width: 20rem;
+  height: 20rem;
+
+}
+.card-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-detail-descripcion{
+  width: 20rem;
+  height: auto;
+}
+
+.contenedor-grande{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.descripcion{
+  color: black;
+  font-size: 1.5rem;
+}
